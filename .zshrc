@@ -33,7 +33,7 @@ alias la='ls -A'
 alias l='ls -F'
 alias r='ranger .'
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias cat='bat'
+alias cat='bat --plain'
 
 # History
 HISTSIZE=100000
