@@ -149,3 +149,4 @@ alias r="ranger"
 export PATH=$HOME/.local/bin:$PATH
 
 . "$HOME/.cargo/env"
+export PATH="$PATH":~/.local/bin
