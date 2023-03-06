@@ -1,9 +1,0 @@
-[ERROR 2023-1-7 20:35:43.994]: No python is installed or a refresh has not already been triggered
-> conda info --json
-> ~/.anaconda/bin/conda info --json
-> ~/.conda/bin/conda info --json
-> ~/anaconda3/bin/conda info --json
-> /bin/python3 ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/interpreterInfo.py
-> /usr/bin/python3 ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/interpreterInfo.py
-> ~/anaconda3/bin/python ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/interpreterInfo.py
-> ~/anaconda3/envs/web_env/bin/python ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/donjayamanne.python-environment-manager-1.0.4/pythonFiles/interpreterInfo.py
