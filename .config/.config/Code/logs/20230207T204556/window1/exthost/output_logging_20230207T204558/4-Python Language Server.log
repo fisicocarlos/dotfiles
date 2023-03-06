@@ -1,0 +1,13 @@
+[Info  - 20:45:59] (47367) Pylance language server 2023.2.10 (pyright 01758105) starting
+[Info  - 20:45:59] (47367) Server root directory: /home/carlos/.vscode/extensions/ms-python.vscode-pylance-2023.2.10/dist
+[Info  - 20:45:59] (47367) Starting service instance "Escritorio"
+[Info  - 20:45:59] (47367) No configuration file found.
+[Info  - 20:45:59] (47367) No pyproject.toml file found.
+[Info  - 20:45:59] (47367) Setting pythonPath for service "Escritorio": "/bin/python3"
+[Warn  - 20:45:59] (47367) stubPath /home/carlos/Escritorio/typings is not a valid directory.
+[Info  - 20:45:59] (47367) Assuming Python version 3.10
+[Info  - 20:45:59] (47367) Assuming Python platform Linux
+[Info  - 20:45:59] (47367) Searching for source files
+[Info  - 20:45:59] (47367) Found 1 source file
+[Info  - 20:46:00] (47367) Background analysis(1) root directory: /home/carlos/.vscode/extensions/ms-python.vscode-pylance-2023.2.10/dist
+[Info  - 20:46:00] (47367) Background analysis(1) started

@@ -1,0 +1,1001 @@
+[2023-2-7:20:49:4] [Info] Exec python, with args: --version
+[2023-2-7:20:49:4] [Info] Python 3.9.12
+
+[2023-2-7:20:49:4] [Info] Exec pip, with args: --version
+[2023-2-7:20:49:5] [Info] pip 21.2.4 from /home/carlos/anaconda3/lib/python3.9/site-packages/pip (python 3.9)
+
+[2023-2-7:20:49:5] [Info] Exec virtualenv, with args: --version
+[2023-2-7:20:49:5] [Info] virtualenv 20.18.0 from /home/carlos/.local/lib/python3.10/site-packages/virtualenv/__init__.py
+
+[2023-2-7:20:49:5] [Info] Check Jupyter installation:
+[2023-2-7:20:49:5] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/jupyter, with args: --version
+[2023-2-7:20:49:5] [Error] Error: spawn /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/jupyter ENOENT
+[2023-2-7:20:49:5] [Info] Jupyter not installed
+[2023-2-7:20:49:5] [Info] Installing PySpark interactive virtual environment ...
+
+[2023-2-7:20:49:5] [Info] Exec python, with args: -m,virtualenv,/home/carlos/.msvscode.hdinsight/hdinsightJupyter
+.[2023-2-7:20:49:6] [Info] created virtual environment CPython3.9.12.final.0-64 in 292ms
+  creator CPython3Posix(dest=/home/carlos/.msvscode.hdinsight/hdinsightJupyter, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/carlos/.local/share/virtualenv)
+    added seed packages: pip==23.0, setuptools==67.1.0, wheel==0.38.4
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+[2023-2-7:20:49:6] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/pip, with args: install,jupyter
+..[2023-2-7:20:49:7] [Info] Collecting jupyter
+
+[2023-2-7:20:49:7] [Info]   Downloading jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+
+[2023-2-7:20:49:8] [Info] Collecting ipykernel
+
+[2023-2-7:20:49:8] [Info]   Downloading ipykernel-6.21.1-py3-none-any.whl (149 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.8/149.8 kB 9.1 MB/s eta 0:00:00
+[2023-2-7:20:49:8] [Info] 
+
+[2023-2-7:20:49:8] [Info] Collecting nbconvert
+
+[2023-2-7:20:49:8] [Info]   Downloading nbconvert-7.2.9-py3-none-any.whl (274 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 274.9/274.9 kB 10.9 MB/s eta 0:00:00
+[2023-2-7:20:49:8] [Info] 
+
+.[2023-2-7:20:49:8] [Info] Collecting notebook
+
+[2023-2-7:20:49:8] [Info]   Downloading notebook-6.5.2-py3-none-any.whl (439 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 439.1/439.1 kB 15.8 MB/s eta 0:00:00
+
+[2023-2-7:20:49:8] [Info] Collecting ipywidgets
+
+[2023-2-7:20:49:8] [Info]   Downloading ipywidgets-8.0.4-py3-none-any.whl (137 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.8/137.8 kB 10.3 MB/s eta 0:00:00
+[2023-2-7:20:49:8] [Info] 
+
+[2023-2-7:20:49:8] [Info] Collecting qtconsole
+
+[2023-2-7:20:49:8] [Info]   Downloading qtconsole-5.4.0-py3-none-any.whl (121 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.0/121.0 kB 12.5 MB/s eta 0:00:00
+
+[2023-2-7:20:49:8] [Info] Collecting jupyter-console
+
+[2023-2-7:20:49:8] [Info]   Downloading jupyter_console-6.4.4-py3-none-any.whl (22 kB)
+
+[2023-2-7:20:49:8] [Info] Collecting nest-asyncio
+
+[2023-2-7:20:49:8] [Info]   Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+
+[2023-2-7:20:49:8] [Info] Collecting psutil
+
+[2023-2-7:20:49:8] [Info]   Downloading psutil-5.9.4-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (280 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.2/280.2 kB 13.1 MB/s eta 0:00:00
+[2023-2-7:20:49:8] [Info] 
+
+[2023-2-7:20:49:8] [Info] Collecting packaging
+
+[2023-2-7:20:49:8] [Info]   Downloading packaging-23.0-py3-none-any.whl (42 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.7/42.7 kB 4.9 MB/s eta 0:00:00
+
+[2023-2-7:20:49:8] [Info] Collecting jupyter-client>=6.1.12
+
+[2023-2-7:20:49:8] [Info]   Downloading jupyter_client-8.0.2-py3-none-any.whl (103 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 13.8 MB/s eta 0:00:00
+
+.[2023-2-7:20:49:8] [Info] Collecting jupyter-core!=5.0.*,>=4.12
+
+[2023-2-7:20:49:8] [Info]   Downloading jupyter_core-5.2.0-py3-none-any.whl (94 kB)
+
+[2023-2-7:20:49:8] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.3/94.3 kB 11.1 MB/s eta 0:00:00
+[2023-2-7:20:49:8] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting debugpy>=1.6.5
+
+[2023-2-7:20:49:9] [Info]   Downloading debugpy-1.6.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 48.8 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting matplotlib-inline>=0.1
+
+[2023-2-7:20:49:9] [Info]   Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+
+[2023-2-7:20:49:9] [Info] Collecting pyzmq>=17
+
+[2023-2-7:20:49:9] [Info]   Downloading pyzmq-25.0.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.1 MB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 35.3 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting comm>=0.1.1
+
+[2023-2-7:20:49:9] [Info]   Downloading comm-0.1.2-py3-none-any.whl (6.5 kB)
+
+[2023-2-7:20:49:9] [Info] Collecting traitlets>=5.4.0
+
+.[2023-2-7:20:49:9] [Info]   Downloading traitlets-5.9.0-py3-none-any.whl (117 kB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.4/117.4 kB 14.8 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting ipython>=7.23.1
+
+[2023-2-7:20:49:9] [Info]   Downloading ipython-8.9.0-py3-none-any.whl (783 kB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 783.1/783.1 kB 45.8 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting tornado>=6.1
+
+[2023-2-7:20:49:9] [Info]   Downloading tornado-6.2-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (423 kB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 424.0/424.0 kB 21.8 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting jupyterlab-widgets~=3.0
+
+[2023-2-7:20:49:9] [Info]   Downloading jupyterlab_widgets-3.0.5-py3-none-any.whl (384 kB)
+
+[2023-2-7:20:49:9] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 384.3/384.3 kB 37.0 MB/s eta 0:00:00
+[2023-2-7:20:49:9] [Info] 
+
+[2023-2-7:20:49:9] [Info] Collecting widgetsnbextension~=4.0
+
+[2023-2-7:20:49:10] [Info]   Downloading widgetsnbextension-4.0.5-py3-none-any.whl (2.0 MB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 53.5 MB/s eta 0:00:00
+[2023-2-7:20:49:10] [Info] 
+
+[2023-2-7:20:49:10] [Info] Collecting pygments
+
+[2023-2-7:20:49:10] [Info]   Downloading Pygments-2.14.0-py3-none-any.whl (1.1 MB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 53.4 MB/s eta 0:00:00
+
+[2023-2-7:20:49:10] [Info] Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+
+[2023-2-7:20:49:10] [Info]   Downloading prompt_toolkit-3.0.36-py3-none-any.whl (386 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.4/386.4 kB 46.5 MB/s eta 0:00:00
+
+.[2023-2-7:20:49:10] [Info] Collecting markupsafe>=2.0
+
+[2023-2-7:20:49:10] [Info]   Downloading MarkupSafe-2.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting nbformat>=5.1
+
+[2023-2-7:20:49:10] [Info]   Downloading nbformat-5.7.3-py3-none-any.whl (78 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.1/78.1 kB 10.2 MB/s eta 0:00:00
+[2023-2-7:20:49:10] [Info] 
+
+[2023-2-7:20:49:10] [Info] Collecting importlib-metadata>=3.6
+
+[2023-2-7:20:49:10] [Info]   Downloading importlib_metadata-6.0.0-py3-none-any.whl (21 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting bleach
+
+[2023-2-7:20:49:10] [Info]   Downloading bleach-6.0.0-py3-none-any.whl (162 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 kB 27.7 MB/s eta 0:00:00
+[2023-2-7:20:49:10] [Info] 
+
+[2023-2-7:20:49:10] [Info] Collecting pandocfilters>=1.4.1
+
+[2023-2-7:20:49:10] [Info]   Downloading pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting jinja2>=3.0
+
+[2023-2-7:20:49:10] [Info]   Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 18.2 MB/s eta 0:00:00
+[2023-2-7:20:49:10] [Info] 
+
+[2023-2-7:20:49:10] [Info] Collecting tinycss2
+
+[2023-2-7:20:49:10] [Info]   Downloading tinycss2-1.2.1-py3-none-any.whl (21 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting beautifulsoup4
+
+[2023-2-7:20:49:10] [Info]   Downloading beautifulsoup4-4.11.2-py3-none-any.whl (129 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.4/129.4 kB 18.0 MB/s eta 0:00:00
+[2023-2-7:20:49:10] [Info] 
+
+[2023-2-7:20:49:10] [Info] Collecting mistune<3,>=2.0.3
+
+[2023-2-7:20:49:10] [Info]   Downloading mistune-2.0.5-py2.py3-none-any.whl (24 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting defusedxml
+
+[2023-2-7:20:49:10] [Info]   Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting jupyterlab-pygments
+
+[2023-2-7:20:49:10] [Info]   Downloading jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
+
+[2023-2-7:20:49:10] [Info] Collecting nbclient>=0.5.0
+
+[2023-2-7:20:49:10] [Info]   Downloading nbclient-0.7.2-py3-none-any.whl (71 kB)
+
+[2023-2-7:20:49:10] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.0/72.0 kB 9.7 MB/s eta 0:00:00
+
+[2023-2-7:20:49:10] [Info] Collecting terminado>=0.8.3
+
+[2023-2-7:20:49:10] [Info]   Downloading terminado-0.17.1-py3-none-any.whl (17 kB)
+
+.[2023-2-7:20:49:10] [Info] Collecting prometheus-client
+
+[2023-2-7:20:49:10] [Info]   Downloading prometheus_client-0.16.0-py3-none-any.whl (122 kB)
+
+[2023-2-7:20:49:11] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.5/122.5 kB 16.9 MB/s eta 0:00:00
+
+[2023-2-7:20:49:11] [Info] Collecting Send2Trash>=1.8.0
+
+[2023-2-7:20:49:11] [Info]   Downloading Send2Trash-1.8.0-py3-none-any.whl (18 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting nbclassic>=0.4.7
+
+[2023-2-7:20:49:11] [Info]   Downloading nbclassic-0.5.1-py3-none-any.whl (10.0 MB)
+
+[2023-2-7:20:49:11] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 37.3 MB/s eta 0:00:00
+
+[2023-2-7:20:49:11] [Info] Collecting ipython-genutils
+
+[2023-2-7:20:49:11] [Info]   Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting argon2-cffi
+
+[2023-2-7:20:49:11] [Info]   Downloading argon2_cffi-21.3.0-py3-none-any.whl (14 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting qtpy>=2.0.1
+
+[2023-2-7:20:49:11] [Info]   Downloading QtPy-2.3.0-py3-none-any.whl (83 kB)
+
+[2023-2-7:20:49:11] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.6/83.6 kB 11.5 MB/s eta 0:00:00
+
+[2023-2-7:20:49:11] [Info] Collecting zipp>=0.5
+
+[2023-2-7:20:49:11] [Info]   Downloading zipp-3.12.1-py3-none-any.whl (6.7 kB)
+
+.[2023-2-7:20:49:11] [Info] Collecting decorator
+
+[2023-2-7:20:49:11] [Info]   Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting jedi>=0.16
+
+[2023-2-7:20:49:11] [Info]   Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+
+[2023-2-7:20:49:11] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 49.1 MB/s eta 0:00:00
+
+[2023-2-7:20:49:11] [Info] Collecting pickleshare
+
+[2023-2-7:20:49:11] [Info]   Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting backcall
+
+[2023-2-7:20:49:11] [Info]   Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+
+[2023-2-7:20:49:11] [Info] Collecting pexpect>4.3
+
+[2023-2-7:20:49:11] [Info]   Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+
+[2023-2-7:20:49:11] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.0/59.0 kB 8.1 MB/s eta 0:00:00
+[2023-2-7:20:49:11] [Info] 
+
+[2023-2-7:20:49:12] [Info] Collecting stack-data
+
+[2023-2-7:20:49:12] [Info]   Downloading stack_data-0.6.2-py3-none-any.whl (24 kB)
+
+[2023-2-7:20:49:12] [Info] Collecting python-dateutil>=2.8.2
+
+[2023-2-7:20:49:12] [Info]   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+
+[2023-2-7:20:49:12] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 30.5 MB/s eta 0:00:00
+[2023-2-7:20:49:12] [Info] 
+
+[2023-2-7:20:49:12] [Info] Collecting platformdirs>=2.5
+
+.[2023-2-7:20:49:12] [Info]   Downloading platformdirs-3.0.0-py3-none-any.whl (14 kB)
+
+[2023-2-7:20:49:12] [Info] Collecting jupyter-server>=1.17.0
+
+[2023-2-7:20:49:12] [Info]   Downloading jupyter_server-2.2.1-py3-none-any.whl (365 kB)
+
+[2023-2-7:20:49:12] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.3/365.3 kB 28.6 MB/s eta 0:00:00
+
+[2023-2-7:20:49:12] [Info] Collecting notebook-shim>=0.1.0
+
+[2023-2-7:20:49:12] [Info]   Downloading notebook_shim-0.2.2-py3-none-any.whl (13 kB)
+
+[2023-2-7:20:49:12] [Info] Collecting jsonschema>=2.6
+
+[2023-2-7:20:49:12] [Info]   Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+
+[2023-2-7:20:49:12] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.4/90.4 kB 11.7 MB/s eta 0:00:00
+[2023-2-7:20:49:12] [Info] 
+
+[2023-2-7:20:49:13] [Info] Collecting fastjsonschema
+
+.[2023-2-7:20:49:13] [Info]   Downloading fastjsonschema-2.16.2-py3-none-any.whl (22 kB)
+
+[2023-2-7:20:49:13] [Info] Collecting wcwidth
+
+[2023-2-7:20:49:13] [Info]   Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+
+[2023-2-7:20:49:13] [Info] Collecting ptyprocess
+
+[2023-2-7:20:49:13] [Info]   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+
+[2023-2-7:20:49:13] [Info] Collecting argon2-cffi-bindings
+
+[2023-2-7:20:49:13] [Info]   Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (86 kB)
+
+[2023-2-7:20:49:13] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 10.3 MB/s eta 0:00:00
+[2023-2-7:20:49:13] [Info] 
+
+[2023-2-7:20:49:13] [Info] Collecting soupsieve>1.2
+
+[2023-2-7:20:49:13] [Info]   Downloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)
+
+[2023-2-7:20:49:13] [Info] Collecting webencodings
+
+[2023-2-7:20:49:13] [Info]   Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+
+[2023-2-7:20:49:13] [Info] Collecting six>=1.9.0
+
+[2023-2-7:20:49:13] [Info]   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+
+.[2023-2-7:20:49:13] [Info] Collecting parso<0.9.0,>=0.8.0
+
+[2023-2-7:20:49:13] [Info]   Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+
+[2023-2-7:20:49:13] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 14.5 MB/s eta 0:00:00
+[2023-2-7:20:49:13] [Info] 
+
+[2023-2-7:20:49:13] [Info] Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+
+[2023-2-7:20:49:13] [Info]   Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+
+[2023-2-7:20:49:13] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 8.0 MB/s eta 0:00:00
+
+[2023-2-7:20:49:13] [Info] Collecting attrs>=17.4.0
+
+[2023-2-7:20:49:13] [Info]   Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+
+[2023-2-7:20:49:13] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 7.7 MB/s eta 0:00:00
+[2023-2-7:20:49:13] [Info] 
+
+[2023-2-7:20:49:14] [Info] Collecting websocket-client
+
+[2023-2-7:20:49:14] [Info]   Downloading websocket_client-1.5.1-py3-none-any.whl (55 kB)
+
+[2023-2-7:20:49:14] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.9/55.9 kB 6.8 MB/s eta 0:00:00
+
+[2023-2-7:20:49:14] [Info] Collecting jupyter-events>=0.4.0
+
+[2023-2-7:20:49:14] [Info]   Downloading jupyter_events-0.6.3-py3-none-any.whl (18 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting anyio>=3.1.0
+
+[2023-2-7:20:49:14] [Info]   Downloading anyio-3.6.2-py3-none-any.whl (80 kB)
+
+[2023-2-7:20:49:14] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 12.0 MB/s eta 0:00:00
+
+[2023-2-7:20:49:14] [Info] Collecting jupyter-server-terminals
+
+[2023-2-7:20:49:14] [Info]   Downloading jupyter_server_terminals-0.4.4-py3-none-any.whl (13 kB)
+
+.[2023-2-7:20:49:14] [Info] Collecting cffi>=1.0.1
+
+[2023-2-7:20:49:14] [Info]   Downloading cffi-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+
+[2023-2-7:20:49:14] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.2/441.2 kB 45.9 MB/s eta 0:00:00
+[2023-2-7:20:49:14] [Info] 
+
+[2023-2-7:20:49:14] [Info] Collecting asttokens>=2.1.0
+
+[2023-2-7:20:49:14] [Info]   Downloading asttokens-2.2.1-py2.py3-none-any.whl (26 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting executing>=1.2.0
+
+[2023-2-7:20:49:14] [Info]   Downloading executing-1.2.0-py2.py3-none-any.whl (24 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting pure-eval
+
+[2023-2-7:20:49:14] [Info]   Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting idna>=2.8
+
+[2023-2-7:20:49:14] [Info]   Downloading idna-3.4-py3-none-any.whl (61 kB)
+
+[2023-2-7:20:49:14] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 8.5 MB/s eta 0:00:00
+[2023-2-7:20:49:14] [Info] 
+
+[2023-2-7:20:49:14] [Info] Collecting sniffio>=1.1
+
+[2023-2-7:20:49:14] [Info]   Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting pycparser
+
+[2023-2-7:20:49:14] [Info]   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+
+[2023-2-7:20:49:14] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 16.0 MB/s eta 0:00:00
+[2023-2-7:20:49:14] [Info] 
+
+[2023-2-7:20:49:14] [Info] Collecting rfc3986-validator>=0.1.1
+
+[2023-2-7:20:49:14] [Info]   Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+
+[2023-2-7:20:49:14] [Info] Collecting pyyaml>=5.3
+
+[2023-2-7:20:49:15] [Info]   Downloading PyYAML-6.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (661 kB)
+
+[2023-2-7:20:49:15] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 661.8/661.8 kB 46.4 MB/s eta 0:00:00
+
+[2023-2-7:20:49:15] [Info] Collecting rfc3339-validator
+
+[2023-2-7:20:49:15] [Info]   Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting python-json-logger>=2.0.4
+
+[2023-2-7:20:49:15] [Info]   Downloading python_json_logger-2.0.4-py3-none-any.whl (7.8 kB)
+
+.[2023-2-7:20:49:15] [Info] Collecting webcolors>=1.11
+
+[2023-2-7:20:49:15] [Info]   Downloading webcolors-1.12-py3-none-any.whl (9.9 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting uri-template
+
+[2023-2-7:20:49:15] [Info]   Downloading uri_template-1.2.0-py3-none-any.whl (10 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting fqdn
+
+[2023-2-7:20:49:15] [Info]   Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting isoduration
+
+[2023-2-7:20:49:15] [Info]   Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting jsonpointer>1.13
+
+[2023-2-7:20:49:15] [Info]   Downloading jsonpointer-2.3-py2.py3-none-any.whl (7.8 kB)
+
+[2023-2-7:20:49:15] [Info] Collecting arrow>=0.15.0
+
+[2023-2-7:20:49:15] [Info]   Downloading arrow-1.2.3-py3-none-any.whl (66 kB)
+
+[2023-2-7:20:49:15] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 8.4 MB/s eta 0:00:00
+
+.[2023-2-7:20:49:15] [Info] Installing collected packages: webencodings, wcwidth, Send2Trash, pure-eval, ptyprocess, pickleshare, mistune, ipython-genutils, fastjsonschema, executing, backcall, zipp, widgetsnbextension, websocket-client, webcolors, uri-template, traitlets, tornado, tinycss2, soupsieve, sniffio, six, rfc3986-validator, pyzmq, pyyaml, python-json-logger, pyrsistent, pygments, pycparser, psutil, prompt-toolkit, prometheus-client, platformdirs, pexpect, parso, pandocfilters, packaging, nest-asyncio, markupsafe, jupyterlab-widgets, jupyterlab-pygments, jsonpointer, idna, fqdn, defusedxml, decorator, debugpy, attrs, terminado, rfc3339-validator, qtpy, python-dateutil, matplotlib-inline, jupyter-core, jsonschema, jinja2, jedi, importlib-metadata, comm, cffi, bleach, beautifulsoup4, asttokens, anyio, stack-data, nbformat, jupyter-server-terminals, jupyter-client, arrow, argon2-cffi-bindings, nbclient, isoduration, ipython, argon2-cffi, nbconvert, ipykernel, qtconsole, jupyter-events, jupyter-console, ipywidgets, jupyter-server, notebook-shim, nbclassic, notebook, jupyter
+
+.......[2023-2-7:20:49:21] [Info] Successfully installed Send2Trash-1.8.0 anyio-3.6.2 argon2-cffi-21.3.0 argon2-cffi-bindings-21.2.0 arrow-1.2.3 asttokens-2.2.1 attrs-22.2.0 backcall-0.2.0 beautifulsoup4-4.11.2 bleach-6.0.0 cffi-1.15.1 comm-0.1.2 debugpy-1.6.6 decorator-5.1.1 defusedxml-0.7.1 executing-1.2.0 fastjsonschema-2.16.2 fqdn-1.5.1 idna-3.4 importlib-metadata-6.0.0 ipykernel-6.21.1 ipython-8.9.0 ipython-genutils-0.2.0 ipywidgets-8.0.4 isoduration-20.11.0 jedi-0.18.2 jinja2-3.1.2 jsonpointer-2.3 jsonschema-4.17.3 jupyter-1.0.0 jupyter-client-8.0.2 jupyter-console-6.4.4 jupyter-core-5.2.0 jupyter-events-0.6.3 jupyter-server-2.2.1 jupyter-server-terminals-0.4.4 jupyterlab-pygments-0.2.2 jupyterlab-widgets-3.0.5 markupsafe-2.1.2 matplotlib-inline-0.1.6 mistune-2.0.5 nbclassic-0.5.1 nbclient-0.7.2 nbconvert-7.2.9 nbformat-5.7.3 nest-asyncio-1.5.6 notebook-6.5.2 notebook-shim-0.2.2 packaging-23.0 pandocfilters-1.5.0 parso-0.8.3 pexpect-4.8.0 pickleshare-0.7.5 platformdirs-3.0.0 prometheus-client-0.16.0 prompt-toolkit-3.0.36 psutil-5.9.4 ptyprocess-0.7.0 pure-eval-0.2.2 pycparser-2.21 pygments-2.14.0 pyrsistent-0.19.3 python-dateutil-2.8.2 python-json-logger-2.0.4 pyyaml-6.0 pyzmq-25.0.0 qtconsole-5.4.0 qtpy-2.3.0 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 six-1.16.0 sniffio-1.3.0 soupsieve-2.3.2.post1 stack-data-0.6.2 terminado-0.17.1 tinycss2-1.2.1 tornado-6.2 traitlets-5.9.0 uri-template-1.2.0 wcwidth-0.2.6 webcolors-1.12 webencodings-0.5.1 websocket-client-1.5.1 widgetsnbextension-4.0.5 zipp-3.12.1
+
+.[2023-2-7:20:49:21] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/pip, with args: install,sparkmagic
+[2023-2-7:20:49:22] [Info] Collecting sparkmagic
+
+[2023-2-7:20:49:22] [Info]   Downloading sparkmagic-0.20.4.tar.gz (44 kB)
+
+[2023-2-7:20:49:22] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 3.9 MB/s eta 0:00:00
+
+[2023-2-7:20:49:22] [Info]   Preparing metadata (setup.py): started
+
+.[2023-2-7:20:49:22] [Info]   Preparing metadata (setup.py): finished with status 'done'
+
+[2023-2-7:20:49:22] [Info] Collecting hdijupyterutils>=0.6
+
+[2023-2-7:20:49:22] [Info]   Downloading hdijupyterutils-0.20.4.tar.gz (5.1 kB)
+
+[2023-2-7:20:49:22] [Info]   Preparing metadata (setup.py): started
+
+[2023-2-7:20:49:22] [Info]   Preparing metadata (setup.py): finished with status 'done'
+
+.[2023-2-7:20:49:22] [Info] Collecting autovizwidget>=0.6
+
+[2023-2-7:20:49:22] [Info]   Downloading autovizwidget-0.20.4.tar.gz (9.0 kB)
+
+[2023-2-7:20:49:22] [Info]   Preparing metadata (setup.py): started
+
+[2023-2-7:20:49:23] [Info]   Preparing metadata (setup.py): finished with status 'done'
+
+[2023-2-7:20:49:23] [Info] Requirement already satisfied: ipython>=4.0.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (8.9.0)
+
+[2023-2-7:20:49:23] [Info] Collecting pandas>=0.17.1
+
+[2023-2-7:20:49:23] [Info]   Downloading pandas-1.5.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+
+[2023-2-7:20:49:23] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 51.0 MB/s eta 0:00:00
+
+.[2023-2-7:20:49:23] [Info] Collecting numpy
+
+[2023-2-7:20:49:23] [Info]   Downloading numpy-1.24.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+
+[2023-2-7:20:49:24] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 44.5 MB/s eta 0:00:00
+
+[2023-2-7:20:49:24] [Info] Collecting requests
+
+[2023-2-7:20:49:24] [Info]   Downloading requests-2.28.2-py3-none-any.whl (62 kB)
+
+[2023-2-7:20:49:24] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 8.8 MB/s eta 0:00:00
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: ipykernel>=4.2.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.21.1)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: ipywidgets>5.0.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (8.0.4)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: notebook>=4.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.5.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: tornado>=4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.2)
+
+[2023-2-7:20:49:24] [Info] Collecting requests_kerberos>=0.8.0
+
+[2023-2-7:20:49:24] [Info]   Downloading requests_kerberos-0.14.0-py2.py3-none-any.whl (11 kB)
+
+.[2023-2-7:20:49:24] [Info] Collecting nest_asyncio==1.5.5
+
+[2023-2-7:20:49:24] [Info]   Downloading nest_asyncio-1.5.5-py3-none-any.whl (5.2 kB)
+
+[2023-2-7:20:49:24] [Info] Collecting plotly>=3
+
+[2023-2-7:20:49:24] [Info]   Downloading plotly-5.13.0-py2.py3-none-any.whl (15.2 MB)
+
+[2023-2-7:20:49:24] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 37.0 MB/s eta 0:00:00
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jupyter>=1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from hdijupyterutils>=0.6->sparkmagic) (1.0.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: comm>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (0.1.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: pyzmq>=17 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (25.0.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: traitlets>=5.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.9.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.2.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: packaging in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (23.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jupyter-client>=6.1.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (8.0.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: psutil in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.9.4)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: debugpy>=1.6.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (1.6.6)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: matplotlib-inline>=0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (0.1.6)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: backcall in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.2.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jedi>=0.16 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.18.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: decorator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (5.1.1)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: stack-data in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.6.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: pickleshare in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.7.5)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: pygments>=2.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (2.14.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: pexpect>4.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (4.8.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.30 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (3.0.36)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: widgetsnbextension~=4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets>5.0.0->sparkmagic) (4.0.5)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jupyterlab-widgets~=3.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets>5.0.0->sparkmagic) (3.0.5)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: nbconvert>=5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (7.2.9)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: jinja2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (3.1.2)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: Send2Trash>=1.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (1.8.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: argon2-cffi in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (21.3.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: nbclassic>=0.4.7 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.5.1)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: nbformat in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (5.7.3)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: prometheus-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.16.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: terminado>=0.8.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.17.1)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: ipython-genutils in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.2.0)
+
+[2023-2-7:20:49:24] [Info] Requirement already satisfied: python-dateutil>=2.8.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from pandas>=0.17.1->sparkmagic) (2.8.2)
+
+.[2023-2-7:20:49:25] [Info] Collecting pytz>=2020.1
+
+[2023-2-7:20:49:25] [Info]   Downloading pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 499.4/499.4 kB 49.6 MB/s eta 0:00:00
+
+[2023-2-7:20:49:25] [Info] Collecting cryptography>=1.3
+
+[2023-2-7:20:49:25] [Info]   Downloading cryptography-39.0.1-cp36-abi3-manylinux_2_28_x86_64.whl (4.2 MB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 40.6 MB/s eta 0:00:00
+
+[2023-2-7:20:49:25] [Info] Collecting pyspnego[kerberos]
+
+[2023-2-7:20:49:25] [Info]   Downloading pyspnego-0.7.0-py3-none-any.whl (130 kB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.1/130.1 kB 18.2 MB/s eta 0:00:00
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: idna<4,>=2.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from requests->sparkmagic) (3.4)
+
+[2023-2-7:20:49:25] [Info] Collecting certifi>=2017.4.17
+
+.[2023-2-7:20:49:25] [Info]   Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 kB 19.8 MB/s eta 0:00:00
+[2023-2-7:20:49:25] [Info] 
+
+[2023-2-7:20:49:25] [Info] Collecting charset-normalizer<4,>=2
+
+[2023-2-7:20:49:25] [Info]   Downloading charset_normalizer-3.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (198 kB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.8/198.8 kB 25.6 MB/s eta 0:00:00
+[2023-2-7:20:49:25] [Info] 
+
+[2023-2-7:20:49:25] [Info] Collecting urllib3<1.27,>=1.21.1
+
+[2023-2-7:20:49:25] [Info]   Downloading urllib3-1.26.14-py2.py3-none-any.whl (140 kB)
+
+[2023-2-7:20:49:25] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.6/140.6 kB 18.6 MB/s eta 0:00:00
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: cffi>=1.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from cryptography>=1.3->requests_kerberos>=0.8.0->sparkmagic) (1.15.1)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: parso<0.9.0,>=0.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jedi>=0.16->ipython>=4.0.2->sparkmagic) (0.8.3)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: qtconsole in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (5.4.0)
+Requirement already satisfied: jupyter-console in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (6.4.4)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: importlib-metadata>=4.8.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-client>=6.1.12->ipykernel>=4.2.2->sparkmagic) (6.0.0)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: platformdirs>=2.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel>=4.2.2->sparkmagic) (3.0.0)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: jupyter-server>=1.17.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (2.2.1)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: notebook-shim>=0.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: tinycss2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (1.2.1)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: nbclient>=0.5.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.7.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: jupyterlab-pygments in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: bleach in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (6.0.0)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: markupsafe>=2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (2.1.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: beautifulsoup4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (4.11.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: pandocfilters>=1.4.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (1.5.0)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: mistune<3,>=2.0.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (2.0.5)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: defusedxml in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.7.1)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: fastjsonschema in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat->notebook>=4.2->sparkmagic) (2.16.2)
+
+[2023-2-7:20:49:25] [Info] Requirement already satisfied: jsonschema>=2.6 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat->notebook>=4.2->sparkmagic) (4.17.3)
+
+[2023-2-7:20:49:26] [Info] Requirement already satisfied: ptyprocess>=0.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from pexpect>4.3->ipython>=4.0.2->sparkmagic) (0.7.0)
+
+[2023-2-7:20:49:26] [Info] Collecting tenacity>=6.2.0
+
+[2023-2-7:20:49:26] [Info]   Downloading tenacity-8.2.0-py3-none-any.whl (24 kB)
+
+[2023-2-7:20:49:26] [Info] Requirement already satisfied: wcwidth in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from prompt-toolkit<3.1.0,>=3.0.30->ipython>=4.0.2->sparkmagic) (0.2.6)
+
+[2023-2-7:20:49:26] [Info] Requirement already satisfied: six>=1.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from python-dateutil>=2.8.1->pandas>=0.17.1->sparkmagic) (1.16.0)
+
+[2023-2-7:20:49:26] [Info] Requirement already satisfied: argon2-cffi-bindings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from argon2-cffi->notebook>=4.2->sparkmagic) (21.2.0)
+
+[2023-2-7:20:49:26] [Info] Collecting krb5>=0.3.0
+
+[2023-2-7:20:49:26] [Info]   Downloading krb5-0.4.1.tar.gz (218 kB)
+
+[2023-2-7:20:49:26] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.7/218.7 kB 29.9 MB/s eta 0:00:00
+
+[2023-2-7:20:49:26] [Info]   Installing build dependencies: started
+
+....[2023-2-7:20:49:28] [Info]   Installing build dependencies: finished with status 'done'
+
+[2023-2-7:20:49:28] [Info]   Getting requirements to build wheel: started
+
+.........[2023-2-7:20:49:34] [Info]   Getting requirements to build wheel: finished with status 'done'
+
+[2023-2-7:20:49:34] [Info]   Installing backend dependencies: started
+
+.[2023-2-7:20:49:36] [Info]   Installing backend dependencies: finished with status 'done'
+
+[2023-2-7:20:49:36] [Info]   Preparing metadata (pyproject.toml): started
+
+.[2023-2-7:20:49:36] [Info]   Preparing metadata (pyproject.toml): finished with status 'done'
+
+[2023-2-7:20:49:36] [Info] Collecting gssapi>=1.6.0
+
+[2023-2-7:20:49:36] [Info]   Downloading gssapi-1.8.2.tar.gz (94 kB)
+
+[2023-2-7:20:49:36] [Info]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.3/94.3 kB 12.1 MB/s eta 0:00:00
+
+[2023-2-7:20:49:36] [Info]   Installing build dependencies: started
+
+...[2023-2-7:20:49:38] [Info]   Installing build dependencies: finished with status 'done'
+
+[2023-2-7:20:49:38] [Info]   Getting requirements to build wheel: started
+
+....[2023-2-7:20:49:41] [Info]   Getting requirements to build wheel: finished with status 'done'
+
+[2023-2-7:20:49:41] [Info]   Installing backend dependencies: started
+
+..[2023-2-7:20:49:42] [Info]   Installing backend dependencies: finished with status 'done'
+
+[2023-2-7:20:49:42] [Info]   Preparing metadata (pyproject.toml): started
+
+[2023-2-7:20:49:42] [Info]   Preparing metadata (pyproject.toml): finished with status 'done'
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: asttokens>=2.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (2.2.1)
+Requirement already satisfied: pure-eval in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: executing>=1.2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (1.2.0)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: pycparser in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from cffi>=1.12->cryptography>=1.3->requests_kerberos>=0.8.0->sparkmagic) (2.21)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: zipp>=0.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from importlib-metadata>=4.8.3->jupyter-client>=6.1.12->ipykernel>=4.2.2->sparkmagic) (3.12.1)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: attrs>=17.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (22.2.0)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (0.19.3)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: anyio>=3.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (3.6.2)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: websocket-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (1.5.1)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: jupyter-events>=0.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.6.3)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: jupyter-server-terminals in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.4.4)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: soupsieve>1.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from beautifulsoup4->nbconvert>=5->notebook>=4.2->sparkmagic) (2.3.2.post1)
+
+[2023-2-7:20:49:42] [Info] Requirement already satisfied: webencodings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from bleach->nbconvert>=5->notebook>=4.2->sparkmagic) (0.5.1)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: qtpy>=2.0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from qtconsole->jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (2.3.0)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: sniffio>=1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from anyio>=3.1.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (1.3.0)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: python-json-logger>=2.0.4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (2.0.4)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: rfc3339-validator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.1.4)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: rfc3986-validator>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.1.1)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: pyyaml>=5.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (6.0)
+
+.[2023-2-7:20:49:43] [Info] Requirement already satisfied: fqdn in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.5.1)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: jsonpointer>1.13 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (2.3)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: uri-template in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.2.0)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: webcolors>=1.11 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.12)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: isoduration in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (20.11.0)
+
+[2023-2-7:20:49:43] [Info] Requirement already satisfied: arrow>=0.15.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from isoduration->jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.2.3)
+
+[2023-2-7:20:49:43] [Info] Building wheels for collected packages: sparkmagic, autovizwidget, hdijupyterutils, gssapi, krb5
+
+[2023-2-7:20:49:43] [Info]   Building wheel for sparkmagic (setup.py): started
+
+[2023-2-7:20:49:43] [Info]   Building wheel for sparkmagic (setup.py): finished with status 'done'
+
+[2023-2-7:20:49:43] [Info]   Created wheel for sparkmagic: filename=sparkmagic-0.20.4-py3-none-any.whl size=66589 sha256=1a0a732f418e2709a406b0031403d71eace8ea76272c0d3829dfdf1f5e02d896
+
+[2023-2-7:20:49:43] [Info]   Stored in directory: /home/carlos/.cache/pip/wheels/58/e2/81/f917f8b0f2615d9aec98ec78a1f9f295e3b12ac913ddff02ca
+
+[2023-2-7:20:49:43] [Info]   Building wheel for autovizwidget (setup.py): started
+
+[2023-2-7:20:49:43] [Info]   Building wheel for autovizwidget (setup.py): finished with status 'done'
+  Created wheel for autovizwidget: filename=autovizwidget-0.20.4-py3-none-any.whl size=14671 sha256=75f7b42a31e9fc160ab7ce0bc8bc8e2ad3c19a55fe751051235955fb3f6976f9
+  Stored in directory: /home/carlos/.cache/pip/wheels/36/ca/01/2a9f90fe109969887cd60bc029f2190c51b26b54efbe05ad4f
+
+[2023-2-7:20:49:43] [Info]   Building wheel for hdijupyterutils (setup.py): started
+
+.[2023-2-7:20:49:44] [Info]   Building wheel for hdijupyterutils (setup.py): finished with status 'done'
+
+[2023-2-7:20:49:44] [Info]   Created wheel for hdijupyterutils: filename=hdijupyterutils-0.20.4-py3-none-any.whl size=7635 sha256=a7b4cd049b742aa9e80fba7fd3b4ae735910e1e897ac9a3d0b8d347d108ca491
+  Stored in directory: /home/carlos/.cache/pip/wheels/2e/92/6a/7f8c9bfa1cad9f49a61871782b65d168143c621f9f9ea62fa7
+
+[2023-2-7:20:49:44] [Info]   Building wheel for gssapi (pyproject.toml): started
+
+[2023-2-7:20:49:44] [Info]   Building wheel for gssapi (pyproject.toml): finished with status 'error'
+
+[2023-2-7:20:49:44] [Error]   error: subprocess-exited-with-error
+  
+  × Building wheel for gssapi (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [66 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-cpython-39
+      creating build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/_win_config.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/names.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/creds.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/exceptions.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/_utils.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/sec_contexts.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/mechs.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      creating build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/named_tuples.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      creating build/lib.linux-x86_64-cpython-39/gssapi/raw/_enum_extensions
+      copying gssapi/raw/_enum_extensions/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw/_enum_extensions
+      creating build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/test_high_level.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/test_raw.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/py.typed -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/raw/ext_rfc5588.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_dce_aead.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/message.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_ggf.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_iov_mic.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/misc.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc5587.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_set_cred_opt.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_dce.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_password_add.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/creds.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_password.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/types.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_cred_store.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc4178.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/names.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_krb5.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/exceptions.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/oids.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_s4u.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc6680_comp_oid.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_cred_imp_exp.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/sec_contexts.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/chan_bindings.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/mech_krb5.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc6680.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc5801.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      running build_ext
+      building 'gssapi.raw.misc' extension
+      creating build/temp.linux-x86_64-cpython-39
+      creating build/temp.linux-x86_64-cpython-39/gssapi
+      creating build/temp.linux-x86_64-cpython-39/gssapi/raw
+      gcc -pthread -B /home/carlos/anaconda3/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/carlos/anaconda3/include -I/home/carlos/anaconda3/include -fPIC -O2 -isystem /home/carlos/anaconda3/include -fPIC -Igssapi/raw -I./gssapi/raw -I/home/carlos/.msvscode.hdinsight/hdinsightJupyter/include -I/home/carlos/anaconda3/include/python3.9 -c gssapi/raw/misc.c -o build/temp.linux-x86_64-cpython-39/gssapi/raw/misc.o -I/home/carlos/anaconda3/include -DHAS_GSSAPI_EXT_H
+      In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:7,
+                       from /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:34,
+                       from /home/carlos/anaconda3/include/python3.9/Python.h:11,
+                       from gssapi/raw/misc.c:55:
+      /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:203:15: fatal error: limits.h: No existe el archivo o el directorio
+        203 | #include_next <limits.h>                /* recurse down to the real one */
+            |               ^~~~~~~~~~
+      compilation terminated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[2023-2-7:20:49:44] [Error]   ERROR: Failed building wheel for gssapi
+
+[2023-2-7:20:49:44] [Info]   Building wheel for krb5 (pyproject.toml): started
+
+.[2023-2-7:20:49:44] [Info]   Building wheel for krb5 (pyproject.toml): finished with status 'error'
+
+[2023-2-7:20:49:44] [Error]   error: subprocess-exited-with-error
+  
+  × Building wheel for krb5 (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [86 lines of output]
+      Using krb5-config at 'krb5-config'
+      Using /home/carlos/anaconda3/lib/libkrb5.so as Kerberos module for platform checks
+      Compiling src/krb5/_ccache.pyx
+      Compiling src/krb5/_ccache_mit.pyx
+      Compiling src/krb5/_ccache_match.pyx
+      Compiling src/krb5/_ccache_support_switch.pyx
+      Compiling src/krb5/_cccol.pyx
+      Compiling src/krb5/_context.pyx
+      Compiling src/krb5/_context_mit.pyx
+      Compiling src/krb5/_creds.pyx
+      Compiling src/krb5/_creds_opt.pyx
+      Skipping src/krb5/_creds_opt_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_creds_opt_mit.pyx
+      Compiling src/krb5/_creds_opt_set_in_ccache.pyx
+      Compiling src/krb5/_creds_opt_set_pac_request.pyx
+      Compiling src/krb5/_exceptions.pyx
+      Compiling src/krb5/_keyblock.pyx
+      Compiling src/krb5/_kt.pyx
+      Compiling src/krb5/_kt_mit.pyx
+      Skipping src/krb5/_kt_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_kt_have_content.pyx
+      Compiling src/krb5/_principal.pyx
+      Skipping src/krb5/_principal_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_string.pyx
+      Compiling src/krb5/_string_mit.pyx
+      /tmp/pip-build-env-2_6oxa0q/overlay/lib/python3.9/site-packages/setuptools/config/pyprojecttoml.py:108: _BetaConfiguration: Support for `[tool.setuptools]` in `pyproject.toml` is still *beta*.
+        warnings.warn(msg, _BetaConfiguration)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-cpython-39
+      creating build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/__init__.py -> build/lib.linux-x86_64-cpython-39/krb5
+      running egg_info
+      writing src/krb5.egg-info/PKG-INFO
+      writing dependency_links to src/krb5.egg-info/dependency_links.txt
+      writing top-level names to src/krb5.egg-info/top_level.txt
+      reading manifest file 'src/krb5.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no previously-included files found matching '.coverage'
+      warning: no previously-included files found matching '.gitignore'
+      warning: no previously-included files found matching '.pre-commit-config.yaml'
+      warning: no previously-included files matching '*.pyc' found under directory 'tests'
+      adding license file 'LICENSE'
+      writing manifest file 'src/krb5.egg-info/SOURCES.txt'
+      copying src/krb5/_ccache.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_match.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_support_switch.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_cccol.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_context.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_context_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_set_in_ccache.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_set_pac_request.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_exceptions.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_keyblock.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_have_content.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_principal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_principal_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_string.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_string_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/py.typed -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/python_krb5.h -> build/lib.linux-x86_64-cpython-39/krb5
+      running build_ext
+      building 'krb5._ccache' extension
+      creating build/temp.linux-x86_64-cpython-39
+      creating build/temp.linux-x86_64-cpython-39/src
+      creating build/temp.linux-x86_64-cpython-39/src/krb5
+      gcc -pthread -B /home/carlos/anaconda3/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/carlos/anaconda3/include -I/home/carlos/anaconda3/include -fPIC -O2 -isystem /home/carlos/anaconda3/include -fPIC -Isrc/krb5 -I/home/carlos/.msvscode.hdinsight/hdinsightJupyter/include -I/home/carlos/anaconda3/include/python3.9 -c src/krb5/_ccache.c -o build/temp.linux-x86_64-cpython-39/src/krb5/_ccache.o -I/home/carlos/anaconda3/include
+      In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:7,
+                       from /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:34,
+                       from /home/carlos/anaconda3/include/python3.9/Python.h:11,
+                       from src/krb5/_ccache.c:52:
+      /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:203:15: fatal error: limits.h: No existe el archivo o el directorio
+        203 | #include_next <limits.h>                /* recurse down to the real one */
+            |               ^~~~~~~~~~
+      compilation terminated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[2023-2-7:20:49:44] [Error]   ERROR: Failed building wheel for krb5
+
+[2023-2-7:20:49:44] [Info] Successfully built sparkmagic autovizwidget hdijupyterutils
+
+[2023-2-7:20:49:44] [Info] Failed to build gssapi krb5
+
+[2023-2-7:20:49:44] [Error] ERROR: Could not build wheels for gssapi, krb5, which is required to install pyproject.toml-based projects
+
+[2023-2-7:20:49:45] [Info] Install Jupyter error:
+[2023-2-7:20:49:45] [Error] Exit with non zero 1
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................

@@ -1,0 +1,24 @@
+2023-02-07 20:14:19.611 [info] update#setState idle
+2023-02-07 20:14:20.475 [info] [UtilityProcess id: 1, type: extensionHost, pid: <none>]: creating new...
+2023-02-07 20:14:20.486 [info] [UtilityProcess id: 1, type: extensionHost, pid: 36775]: successfully created
+2023-02-07 20:14:49.614 [info] update#setState checking for updates
+2023-02-07 20:14:49.655 [info] update#setState idle
+2023-02-07 20:32:18.482 [info] [UtilityProcess id: 1, type: extensionHost, pid: 36775]: received exit event with code 0
+2023-02-07 20:32:18.482 [info] Extension host with pid 36775 exited with code: 0, signal: unknown.
+2023-02-07 20:32:18.586 [info] [UtilityProcess id: 2, type: extensionHost, pid: <none>]: creating new...
+2023-02-07 20:32:18.597 [info] [UtilityProcess id: 2, type: extensionHost, pid: 43456]: successfully created
+2023-02-07 20:32:43.297 [info] [UtilityProcess id: 2, type: extensionHost, pid: 43456]: received exit event with code 0
+2023-02-07 20:32:43.298 [info] Extension host with pid 43456 exited with code: 0, signal: unknown.
+2023-02-07 20:32:43.878 [info] [UtilityProcess id: 3, type: extensionHost, pid: <none>]: creating new...
+2023-02-07 20:32:43.886 [info] [UtilityProcess id: 3, type: extensionHost, pid: 43636]: successfully created
+2023-02-07 20:36:07.849 [info] [UtilityProcess id: 3, type: extensionHost, pid: 43636]: received exit event with code 0
+2023-02-07 20:36:07.850 [info] Extension host with pid 43636 exited with code: 0, signal: unknown.
+2023-02-07 20:36:08.322 [info] [UtilityProcess id: 4, type: extensionHost, pid: <none>]: creating new...
+2023-02-07 20:36:08.330 [info] [UtilityProcess id: 4, type: extensionHost, pid: 45052]: successfully created
+2023-02-07 20:36:21.250 [info] [UtilityProcess id: 4, type: extensionHost, pid: 45052]: received exit event with code 0
+2023-02-07 20:36:21.250 [info] Extension host with pid 45052 exited with code: 0, signal: unknown.
+2023-02-07 20:36:21.393 [info] [UtilityProcess id: 5, type: extensionHost, pid: <none>]: creating new...
+2023-02-07 20:36:21.403 [info] [UtilityProcess id: 5, type: extensionHost, pid: 45136]: successfully created
+2023-02-07 20:42:45.995 [info] [UtilityProcess id: 5, type: extensionHost, pid: 45136]: waiting to exit...
+2023-02-07 20:42:46.007 [info] [UtilityProcess id: 5, type: extensionHost, pid: 45136]: received exit event with code 0
+2023-02-07 20:42:46.007 [info] Extension host with pid 45136 exited with code: 0, signal: unknown.

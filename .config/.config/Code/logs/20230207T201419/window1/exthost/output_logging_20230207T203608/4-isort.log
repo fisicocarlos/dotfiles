@@ -1,0 +1,43 @@
+Name: isort
+Module: isort
+Python extension loading
+Waiting for interpreter from python extension.
+Python extension loaded
+CWD Server: /home/carlos/Escritorio
+sys.path used to run Server:
+   /home/carlos/.vscode/extensions/ms-python.isort-2022.8.0/bundled/libs
+   /home/carlos/.vscode/extensions/ms-python.isort-2022.8.0/bundled/tool
+   /usr/lib/python310.zip
+   /usr/lib/python3.10
+   /usr/lib/python3.10/lib-dynload
+   /home/carlos/.local/lib/python3.10/site-packages
+   /usr/local/lib/python3.10/dist-packages
+   /usr/lib/python3/dist-packages
+Settings used to run Server:
+[
+    {
+        "check": false,
+        "workspace": "file:///home/carlos/Escritorio",
+        "logLevel": "error",
+        "args": [],
+        "severity": {
+            "W": "Warning",
+            "E": "Hint"
+        },
+        "path": [],
+        "interpreter": [
+            "/bin/python3"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+/bin/python3 -m isort --version-number
+CWD Linter: /home/carlos/Escritorio
+Version info for isort running for /home/carlos/Escritorio:
+5.10.1
+
+SUPPORTED isort>=5.10.1
+FOUND isort==5.10.1
+

@@ -1,0 +1,6 @@
+LSP Notebooks experiment is disabled -- Jupyter disabled or not installed
+LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
+Python interpreter path: /bin/python3
+Starting Pylance language server.
+> /bin/python3 -m autopep8 --diff ./a.py.bdb66a5627b10160887a1c17cb418d77.tmp
+cwd: .

@@ -1,0 +1,54 @@
+{
+    "editor.insertSpaces": true,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "selection",
+    "editor.rulers": [100, 72],
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "vim.autoindent": true,
+    "vim.cursorStylePerMode.visual": "line",
+    "vim.cursorStylePerMode.visualblock": "line",
+    "vim.cursorStylePerMode.visualline": "line",
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "j"
+            ]
+        }
+    ],
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "after": [
+                "i"
+            ],
+            "before": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.overrideCopy": false,
+    "vim.startInInsertMode": true,
+    "vim.useCtrlKeys": false,
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "vim.useSystemClipboard": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "'Sauce Code Pro Nerd Font Bold'"
+}

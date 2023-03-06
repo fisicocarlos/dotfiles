@@ -1,0 +1,2 @@
+[2023-2-7:20:40:53] [Info] Exec python, with args: --version
+[2023-2-7:20:40:53] [Error] Error: spawn python ENOENT

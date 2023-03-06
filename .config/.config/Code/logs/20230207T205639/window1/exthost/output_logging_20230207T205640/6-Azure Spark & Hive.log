@@ -1,0 +1,669 @@
+[2023-2-7:20:56:42] [Info] Exec python, with args: --version
+[2023-2-7:20:56:42] [Info] Python 3.9.12
+
+[2023-2-7:20:56:42] [Info] Exec pip, with args: --version
+[2023-2-7:20:56:42] [Info] pip 21.2.4 from /home/carlos/anaconda3/lib/python3.9/site-packages/pip (python 3.9)
+
+[2023-2-7:20:56:43] [Info] Exec virtualenv, with args: --version
+[2023-2-7:20:56:43] [Info] virtualenv 20.18.0 from /home/carlos/.local/lib/python3.10/site-packages/virtualenv/__init__.py
+
+[2023-2-7:20:56:43] [Info] Check Jupyter installation:
+[2023-2-7:20:56:43] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/jupyter, with args: --version
+[2023-2-7:20:56:43] [Info] Selected Jupyter core packages...
+IPython          : 8.9.0
+ipykernel        : 6.21.1
+ipywidgets       : 8.0.4
+jupyter_client   : 8.0.2
+jupyter_core     : 5.2.0
+jupyter_server   : 2.2.1
+jupyterlab       : not installed
+nbclient         : 0.7.2
+nbconvert        : 7.2.9
+nbformat         : 5.7.3
+notebook         : 6.5.2
+qtconsole        : 5.4.0
+traitlets        : 5.9.0
+
+.[2023-2-7:20:56:43] [Info] Jupyter already installed
+[2023-2-7:20:56:43] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/pip, with args: show,sparkmagic
+[2023-2-7:20:56:44] [Error] WARNING: Package(s) not found: sparkmagic
+
+[2023-2-7:20:56:44] [Error] Exit with non zero 1
+[2023-2-7:20:56:44] [Info] Sparkmagic not installed
+[2023-2-7:20:56:44] [Info] Installing PySpark interactive virtual environment ...
+
+[2023-2-7:20:56:44] [Info] Exec python, with args: -m,virtualenv,/home/carlos/.msvscode.hdinsight/hdinsightJupyter
+[2023-2-7:20:56:44] [Info] created virtual environment CPython3.9.12.final.0-64 in 169ms
+  creator CPython3Posix(dest=/home/carlos/.msvscode.hdinsight/hdinsightJupyter, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/carlos/.local/share/virtualenv)
+    added seed packages: Jinja2==3.1.2, MarkupSafe==2.1.2, PyYAML==6.0, Pygments==2.14.0, QtPy==2.3.0, Send2Trash==1.8.0, anyio==3.6.2, argon2_cffi==21.3.0, argon2_cffi_bindings==21.2.0, arrow==1.2.3, asttokens==2.2.1, attrs==22.2.0, backcall==0.2.0, beautifulsoup4==4.11.2, bleach==6.0.0, cffi==1.15.1, comm==0.1.2, debugpy==1.6.6, decorator==5.1.1, defusedxml==0.7.1, executing==1.2.0, fastjsonschema==2.16.2, fqdn==1.5.1, idna==3.4, importlib_metadata==6.0.0, ipykernel==6.21.1, ipython==8.9.0, ipython_genutils==0.2.0, ipywidgets==8.0.4, isoduration==20.11.0, jedi==0.18.2, jsonpointer==2.3, jsonschema==4.17.3, jupyter==1.0.0, jupyter_client==8.0.2, jupyter_console==6.4.4, jupyter_core==5.2.0, jupyter_events==0.6.3, jupyter_server==2.2.1, jupyter_server_terminals==0.4.4, jupyterlab_pygments==0.2.2, jupyterlab_widgets==3.0.5, matplotlib_inline==0.1.6, mistune==2.0.5, nbclassic==0.5.1, nbclient==0.7.2, nbconvert==7.2.9, nbformat==5.7.3, nest_asyncio==1.5.6, notebook==6.5.2, notebook_shim==0.2.2, packaging==23.0, pandocfilters==1.5.0, parso==0.8.3, pexpect==4.8.0, pickleshare==0.7.5, pip==23.0, platformdirs==3.0.0, prometheus_client==0.16.0, prompt_toolkit==3.0.36, psutil==5.9.4, ptyprocess==0.7.0, pure_eval==0.2.2, pycparser==2.21, pyrsistent==0.19.3, python_dateutil==2.8.2, python_json_logger==2.0.4, pyzmq==25.0.0, qtconsole==5.4.0, rfc3339_validator==0.1.4, rfc3986_validator==0.1.1, setuptools==67.1.0, six==1.16.0, sniffio==1.3.0, soupsieve==2.3.2.post1, stack_data==0.6.2, terminado==0.17.1, tinycss2==1.2.1, tornado==6.2, traitlets==5.9.0, uri_template==1.2.0, wcwidth==0.2.6, webcolors==1.12, webencodings==0.5.1, websocket_client==1.5.1, wheel==0.38.4, widgetsnbextension==4.0.5, zipp==3.12.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+[2023-2-7:20:56:44] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/pip, with args: install,jupyter
+..[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyter in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (1.0.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: qtconsole in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (5.4.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyter-console in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (6.4.4)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: ipykernel in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (6.21.1)
+Requirement already satisfied: ipywidgets in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (8.0.4)
+Requirement already satisfied: notebook in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (6.5.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: nbconvert in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter) (7.2.9)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: ipython>=7.23.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (8.9.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: matplotlib-inline>=0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (0.1.6)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: packaging in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (23.0)
+Requirement already satisfied: nest-asyncio in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (1.5.6)
+Requirement already satisfied: psutil in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (5.9.4)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: debugpy>=1.6.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (1.6.6)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: pyzmq>=17 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (25.0.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: tornado>=6.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (6.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (5.2.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: comm>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (0.1.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyter-client>=6.1.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (8.0.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: traitlets>=5.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel->jupyter) (5.9.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: widgetsnbextension~=4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets->jupyter) (4.0.5)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyterlab-widgets~=3.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets->jupyter) (3.0.5)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-console->jupyter) (3.0.36)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: pygments in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-console->jupyter) (2.14.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: mistune<3,>=2.0.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (2.0.5)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: beautifulsoup4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (4.11.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jinja2>=3.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (3.1.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: pandocfilters>=1.4.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (1.5.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: bleach in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (6.0.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: defusedxml in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (0.7.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: tinycss2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (1.2.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: markupsafe>=2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (2.1.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: nbformat>=5.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (5.7.3)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyterlab-pygments in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (0.2.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: nbclient>=0.5.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (0.7.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: importlib-metadata>=3.6 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert->jupyter) (6.0.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: argon2-cffi in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (21.3.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: nbclassic>=0.4.7 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (0.5.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: terminado>=0.8.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (0.17.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: Send2Trash>=1.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (1.8.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: prometheus-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (0.16.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: ipython-genutils in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook->jupyter) (0.2.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: qtpy>=2.0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from qtconsole->jupyter) (2.3.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: zipp>=0.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from importlib-metadata>=3.6->nbconvert->jupyter) (3.12.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jedi>=0.16 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.18.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: backcall in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.2.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: pexpect>4.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (4.8.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: decorator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (5.1.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: stack-data in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.6.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: pickleshare in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.7.5)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: python-dateutil>=2.8.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-client>=6.1.12->ipykernel->jupyter) (2.8.2)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: platformdirs>=2.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel->jupyter) (3.0.0)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: jupyter-server>=1.17.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook->jupyter) (2.2.1)
+
+[2023-2-7:20:56:45] [Info] Requirement already satisfied: notebook-shim>=0.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook->jupyter) (0.2.2)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: fastjsonschema in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat>=5.1->nbconvert->jupyter) (2.16.2)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: jsonschema>=2.6 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat>=5.1->nbconvert->jupyter) (4.17.3)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: wcwidth in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->jupyter-console->jupyter) (0.2.6)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: ptyprocess in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from terminado>=0.8.3->notebook->jupyter) (0.7.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: argon2-cffi-bindings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from argon2-cffi->notebook->jupyter) (21.2.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: soupsieve>1.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from beautifulsoup4->nbconvert->jupyter) (2.3.2.post1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: six>=1.9.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from bleach->nbconvert->jupyter) (1.16.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: webencodings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from bleach->nbconvert->jupyter) (0.5.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: parso<0.9.0,>=0.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel->jupyter) (0.8.3)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: attrs>=17.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (22.2.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (0.19.3)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: websocket-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (1.5.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: jupyter-server-terminals in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (0.4.4)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: jupyter-events>=0.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (0.6.3)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: anyio>=3.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (3.6.2)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: cffi>=1.0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (1.15.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: asttokens>=2.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (2.2.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: executing>=1.2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (1.2.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: pure-eval in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (0.2.2)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: idna>=2.8 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from anyio>=3.1.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (3.4)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: sniffio>=1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from anyio>=3.1.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (1.3.0)
+
+.[2023-2-7:20:56:46] [Info] Requirement already satisfied: pycparser in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (2.21)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: pyyaml>=5.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (6.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: python-json-logger>=2.0.4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (2.0.4)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: rfc3339-validator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (0.1.4)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: rfc3986-validator>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook->jupyter) (0.1.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: jsonpointer>1.13 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (2.3)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: fqdn in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.5.1)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: webcolors>=1.11 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.12)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: uri-template in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.2.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: isoduration in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (20.11.0)
+
+[2023-2-7:20:56:46] [Info] Requirement already satisfied: arrow>=0.15.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from isoduration->jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.2.3)
+
+[2023-2-7:20:56:46] [Info] Exec /home/carlos/.msvscode.hdinsight/hdinsightJupyter/bin/pip, with args: install,sparkmagic
+.[2023-2-7:20:56:47] [Info] Collecting sparkmagic
+  Using cached sparkmagic-0.20.4-py3-none-any.whl
+
+[2023-2-7:20:56:47] [Info] Requirement already satisfied: ipywidgets>5.0.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (8.0.4)
+
+[2023-2-7:20:56:47] [Info] Collecting requests-kerberos>=0.8.0
+
+[2023-2-7:20:56:47] [Info]   Using cached requests_kerberos-0.14.0-py2.py3-none-any.whl (11 kB)
+
+[2023-2-7:20:56:47] [Info] Requirement already satisfied: tornado>=4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.2)
+
+[2023-2-7:20:56:47] [Info] Collecting numpy
+
+[2023-2-7:20:56:47] [Info]   Using cached numpy-1.24.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+
+[2023-2-7:20:56:47] [Info] Collecting hdijupyterutils>=0.6
+
+[2023-2-7:20:56:47] [Info]   Using cached hdijupyterutils-0.20.4-py3-none-any.whl
+
+[2023-2-7:20:56:47] [Info] Requirement already satisfied: notebook>=4.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.5.2)
+
+[2023-2-7:20:56:47] [Info] Collecting nest-asyncio==1.5.5
+
+[2023-2-7:20:56:47] [Info]   Using cached nest_asyncio-1.5.5-py3-none-any.whl (5.2 kB)
+
+[2023-2-7:20:56:47] [Info] Requirement already satisfied: ipykernel>=4.2.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (6.21.1)
+
+[2023-2-7:20:56:47] [Info] Requirement already satisfied: ipython>=4.0.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from sparkmagic) (8.9.0)
+
+[2023-2-7:20:56:47] [Info] Collecting autovizwidget>=0.6
+  Using cached autovizwidget-0.20.4-py3-none-any.whl
+
+[2023-2-7:20:56:47] [Info] Collecting requests
+
+[2023-2-7:20:56:47] [Info]   Using cached requests-2.28.2-py3-none-any.whl (62 kB)
+
+.[2023-2-7:20:56:47] [Info] Collecting pandas>=0.17.1
+
+[2023-2-7:20:56:47] [Info]   Using cached pandas-1.5.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+
+[2023-2-7:20:56:47] [Info] Collecting plotly>=3
+
+[2023-2-7:20:56:47] [Info]   Using cached plotly-5.13.0-py2.py3-none-any.whl (15.2 MB)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyter>=1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from hdijupyterutils>=0.6->sparkmagic) (1.0.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: debugpy>=1.6.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (1.6.6)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyter-client>=6.1.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (8.0.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: traitlets>=5.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.9.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.2.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: comm>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (0.1.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: matplotlib-inline>=0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (0.1.6)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: pyzmq>=17 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (25.0.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: packaging in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (23.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: psutil in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipykernel>=4.2.2->sparkmagic) (5.9.4)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: prompt-toolkit<3.1.0,>=3.0.30 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (3.0.36)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: stack-data in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.6.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: pygments>=2.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (2.14.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: pexpect>4.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (4.8.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: decorator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (5.1.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: pickleshare in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.7.5)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: backcall in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.2.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jedi>=0.16 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipython>=4.0.2->sparkmagic) (0.18.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyterlab-widgets~=3.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets>5.0.0->sparkmagic) (3.0.5)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: widgetsnbextension~=4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from ipywidgets>5.0.0->sparkmagic) (4.0.5)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jinja2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (3.1.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: nbformat in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (5.7.3)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: terminado>=0.8.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.17.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: nbconvert>=5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (7.2.9)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: Send2Trash>=1.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (1.8.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: prometheus-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.16.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: ipython-genutils in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.2.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: argon2-cffi in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (21.3.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: nbclassic>=0.4.7 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from notebook>=4.2->sparkmagic) (0.5.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: python-dateutil>=2.8.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from pandas>=0.17.1->sparkmagic) (2.8.2)
+
+[2023-2-7:20:56:48] [Info] Collecting pytz>=2020.1
+
+[2023-2-7:20:56:48] [Info]   Using cached pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+
+[2023-2-7:20:56:48] [Info] Collecting pyspnego[kerberos]
+
+[2023-2-7:20:56:48] [Info]   Using cached pyspnego-0.7.0-py3-none-any.whl (130 kB)
+
+.[2023-2-7:20:56:48] [Info] Collecting cryptography>=1.3
+
+[2023-2-7:20:56:48] [Info]   Using cached cryptography-39.0.1-cp36-abi3-manylinux_2_28_x86_64.whl (4.2 MB)
+
+[2023-2-7:20:56:48] [Info] Collecting urllib3<1.27,>=1.21.1
+
+[2023-2-7:20:56:48] [Info]   Using cached urllib3-1.26.14-py2.py3-none-any.whl (140 kB)
+
+[2023-2-7:20:56:48] [Info] Collecting certifi>=2017.4.17
+
+[2023-2-7:20:56:48] [Info]   Using cached certifi-2022.12.7-py3-none-any.whl (155 kB)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: idna<4,>=2.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from requests->sparkmagic) (3.4)
+
+[2023-2-7:20:56:48] [Info] Collecting charset-normalizer<4,>=2
+
+[2023-2-7:20:56:48] [Info]   Using cached charset_normalizer-3.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (198 kB)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: cffi>=1.12 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from cryptography>=1.3->requests-kerberos>=0.8.0->sparkmagic) (1.15.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: parso<0.9.0,>=0.8.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jedi>=0.16->ipython>=4.0.2->sparkmagic) (0.8.3)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: qtconsole in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (5.4.0)
+Requirement already satisfied: jupyter-console in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (6.4.4)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: importlib-metadata>=4.8.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-client>=6.1.12->ipykernel>=4.2.2->sparkmagic) (6.0.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: platformdirs>=2.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel>=4.2.2->sparkmagic) (3.0.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyter-server>=1.17.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (2.2.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: notebook-shim>=0.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: bleach in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (6.0.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: pandocfilters>=1.4.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (1.5.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: mistune<3,>=2.0.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (2.0.5)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: tinycss2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (1.2.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: markupsafe>=2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (2.1.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: beautifulsoup4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (4.11.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: nbclient>=0.5.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.7.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jupyterlab-pygments in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: defusedxml in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbconvert>=5->notebook>=4.2->sparkmagic) (0.7.1)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: fastjsonschema in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat->notebook>=4.2->sparkmagic) (2.16.2)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: jsonschema>=2.6 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from nbformat->notebook>=4.2->sparkmagic) (4.17.3)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: ptyprocess>=0.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from pexpect>4.3->ipython>=4.0.2->sparkmagic) (0.7.0)
+
+[2023-2-7:20:56:48] [Info] Collecting tenacity>=6.2.0
+
+[2023-2-7:20:56:48] [Info]   Using cached tenacity-8.2.0-py3-none-any.whl (24 kB)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: wcwidth in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from prompt-toolkit<3.1.0,>=3.0.30->ipython>=4.0.2->sparkmagic) (0.2.6)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: six>=1.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from python-dateutil>=2.8.1->pandas>=0.17.1->sparkmagic) (1.16.0)
+
+[2023-2-7:20:56:48] [Info] Requirement already satisfied: argon2-cffi-bindings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from argon2-cffi->notebook>=4.2->sparkmagic) (21.2.0)
+
+[2023-2-7:20:56:49] [Info] Collecting krb5>=0.3.0
+
+[2023-2-7:20:56:49] [Info]   Using cached krb5-0.4.1.tar.gz (218 kB)
+
+[2023-2-7:20:56:49] [Info]   Installing build dependencies: started
+
+....[2023-2-7:20:56:51] [Info]   Installing build dependencies: finished with status 'done'
+
+[2023-2-7:20:56:51] [Info]   Getting requirements to build wheel: started
+
+.........[2023-2-7:20:56:57] [Info]   Getting requirements to build wheel: finished with status 'done'
+
+[2023-2-7:20:56:57] [Info]   Installing backend dependencies: started
+
+.[2023-2-7:20:56:58] [Info]   Installing backend dependencies: finished with status 'done'
+
+[2023-2-7:20:56:58] [Info]   Preparing metadata (pyproject.toml): started
+
+.[2023-2-7:20:56:59] [Info]   Preparing metadata (pyproject.toml): finished with status 'done'
+
+[2023-2-7:20:56:59] [Info] Collecting gssapi>=1.6.0
+
+[2023-2-7:20:56:59] [Info]   Using cached gssapi-1.8.2.tar.gz (94 kB)
+
+[2023-2-7:20:56:59] [Info]   Installing build dependencies: started
+
+...[2023-2-7:20:57:1] [Info]   Installing build dependencies: finished with status 'done'
+
+[2023-2-7:20:57:1] [Info]   Getting requirements to build wheel: started
+
+....[2023-2-7:20:57:4] [Info]   Getting requirements to build wheel: finished with status 'done'
+
+[2023-2-7:20:57:4] [Info]   Installing backend dependencies: started
+
+.[2023-2-7:20:57:5] [Info]   Installing backend dependencies: finished with status 'done'
+
+[2023-2-7:20:57:5] [Info]   Preparing metadata (pyproject.toml): started
+
+.[2023-2-7:20:57:5] [Info]   Preparing metadata (pyproject.toml): finished with status 'done'
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: pure-eval in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (0.2.2)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: asttokens>=2.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (2.2.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: executing>=1.2.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from stack-data->ipython>=4.0.2->sparkmagic) (1.2.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: pycparser in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from cffi>=1.12->cryptography>=1.3->requests-kerberos>=0.8.0->sparkmagic) (2.21)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: zipp>=0.5 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from importlib-metadata>=4.8.3->jupyter-client>=6.1.12->ipykernel>=4.2.2->sparkmagic) (3.12.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: attrs>=17.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (22.2.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (0.19.3)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: anyio>=3.1.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (3.6.2)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: jupyter-server-terminals in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.4.4)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: websocket-client in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (1.5.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: jupyter-events>=0.4.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.6.3)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: soupsieve>1.2 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from beautifulsoup4->nbconvert>=5->notebook>=4.2->sparkmagic) (2.3.2.post1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: webencodings in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from bleach->nbconvert>=5->notebook>=4.2->sparkmagic) (0.5.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: qtpy>=2.0.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from qtconsole->jupyter>=1->hdijupyterutils>=0.6->sparkmagic) (2.3.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: sniffio>=1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from anyio>=3.1.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (1.3.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: python-json-logger>=2.0.4 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (2.0.4)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: rfc3986-validator>=0.1.1 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.1.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: pyyaml>=5.3 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (6.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: rfc3339-validator in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.17.0->nbclassic>=0.4.7->notebook>=4.2->sparkmagic) (0.1.4)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: isoduration in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (20.11.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: fqdn in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.5.1)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: webcolors>=1.11 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.12)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: jsonpointer>1.13 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (2.3)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: uri-template in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.2.0)
+
+[2023-2-7:20:57:5] [Info] Requirement already satisfied: arrow>=0.15.0 in ./.msvscode.hdinsight/hdinsightJupyter/lib/python3.9/site-packages (from isoduration->jsonschema>=2.6->nbformat->notebook>=4.2->sparkmagic) (1.2.3)
+
+[2023-2-7:20:57:5] [Info] Building wheels for collected packages: gssapi, krb5
+
+[2023-2-7:20:57:5] [Info]   Building wheel for gssapi (pyproject.toml): started
+
+.[2023-2-7:20:57:6] [Info]   Building wheel for gssapi (pyproject.toml): finished with status 'error'
+
+[2023-2-7:20:57:6] [Error]   error: subprocess-exited-with-error
+  
+  × Building wheel for gssapi (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [66 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-cpython-39
+      creating build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/_win_config.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/names.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/creds.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/exceptions.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/_utils.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/sec_contexts.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/mechs.py -> build/lib.linux-x86_64-cpython-39/gssapi
+      creating build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/named_tuples.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      creating build/lib.linux-x86_64-cpython-39/gssapi/raw/_enum_extensions
+      copying gssapi/raw/_enum_extensions/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/raw/_enum_extensions
+      creating build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/test_high_level.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/test_raw.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/tests/__init__.py -> build/lib.linux-x86_64-cpython-39/gssapi/tests
+      copying gssapi/py.typed -> build/lib.linux-x86_64-cpython-39/gssapi
+      copying gssapi/raw/ext_rfc5588.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_dce_aead.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/message.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_ggf.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_iov_mic.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/misc.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc5587.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_set_cred_opt.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_dce.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_password_add.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/creds.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_password.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/types.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_cred_store.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc4178.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/names.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_krb5.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/exceptions.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/oids.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_s4u.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc6680_comp_oid.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_cred_imp_exp.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/sec_contexts.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/chan_bindings.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/mech_krb5.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc6680.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      copying gssapi/raw/ext_rfc5801.pyi -> build/lib.linux-x86_64-cpython-39/gssapi/raw
+      running build_ext
+      building 'gssapi.raw.misc' extension
+      creating build/temp.linux-x86_64-cpython-39
+      creating build/temp.linux-x86_64-cpython-39/gssapi
+      creating build/temp.linux-x86_64-cpython-39/gssapi/raw
+      gcc -pthread -B /home/carlos/anaconda3/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/carlos/anaconda3/include -I/home/carlos/anaconda3/include -fPIC -O2 -isystem /home/carlos/anaconda3/include -fPIC -Igssapi/raw -I./gssapi/raw -I/home/carlos/.msvscode.hdinsight/hdinsightJupyter/include -I/home/carlos/anaconda3/include/python3.9 -c gssapi/raw/misc.c -o build/temp.linux-x86_64-cpython-39/gssapi/raw/misc.o -I/home/carlos/anaconda3/include -DHAS_GSSAPI_EXT_H
+      In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:7,
+                       from /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:34,
+                       from /home/carlos/anaconda3/include/python3.9/Python.h:11,
+                       from gssapi/raw/misc.c:55:
+      /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:203:15: fatal error: limits.h: No existe el archivo o el directorio
+        203 | #include_next <limits.h>                /* recurse down to the real one */
+            |               ^~~~~~~~~~
+      compilation terminated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[2023-2-7:20:57:6] [Error]   ERROR: Failed building wheel for gssapi
+
+[2023-2-7:20:57:6] [Info]   Building wheel for krb5 (pyproject.toml): started
+
+[2023-2-7:20:57:6] [Info]   Building wheel for krb5 (pyproject.toml): finished with status 'error'
+
+[2023-2-7:20:57:6] [Error]   error: subprocess-exited-with-error
+  
+  × Building wheel for krb5 (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [86 lines of output]
+      Using krb5-config at 'krb5-config'
+      Using /home/carlos/anaconda3/lib/libkrb5.so as Kerberos module for platform checks
+      Compiling src/krb5/_ccache.pyx
+      Compiling src/krb5/_ccache_mit.pyx
+      Compiling src/krb5/_ccache_match.pyx
+      Compiling src/krb5/_ccache_support_switch.pyx
+      Compiling src/krb5/_cccol.pyx
+      Compiling src/krb5/_context.pyx
+      Compiling src/krb5/_context_mit.pyx
+      Compiling src/krb5/_creds.pyx
+      Compiling src/krb5/_creds_opt.pyx
+      Skipping src/krb5/_creds_opt_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_creds_opt_mit.pyx
+      Compiling src/krb5/_creds_opt_set_in_ccache.pyx
+      Compiling src/krb5/_creds_opt_set_pac_request.pyx
+      Compiling src/krb5/_exceptions.pyx
+      Compiling src/krb5/_keyblock.pyx
+      Compiling src/krb5/_kt.pyx
+      Compiling src/krb5/_kt_mit.pyx
+      Skipping src/krb5/_kt_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_kt_have_content.pyx
+      Compiling src/krb5/_principal.pyx
+      Skipping src/krb5/_principal_heimdal.pyx as it is not supported by the selected Kerberos implementation.
+      Compiling src/krb5/_string.pyx
+      Compiling src/krb5/_string_mit.pyx
+      /tmp/pip-build-env-a6j_djw2/overlay/lib/python3.9/site-packages/setuptools/config/pyprojecttoml.py:108: _BetaConfiguration: Support for `[tool.setuptools]` in `pyproject.toml` is still *beta*.
+        warnings.warn(msg, _BetaConfiguration)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-cpython-39
+      creating build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/__init__.py -> build/lib.linux-x86_64-cpython-39/krb5
+      running egg_info
+      writing src/krb5.egg-info/PKG-INFO
+      writing dependency_links to src/krb5.egg-info/dependency_links.txt
+      writing top-level names to src/krb5.egg-info/top_level.txt
+      reading manifest file 'src/krb5.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no previously-included files found matching '.coverage'
+      warning: no previously-included files found matching '.gitignore'
+      warning: no previously-included files found matching '.pre-commit-config.yaml'
+      warning: no previously-included files matching '*.pyc' found under directory 'tests'
+      adding license file 'LICENSE'
+      writing manifest file 'src/krb5.egg-info/SOURCES.txt'
+      copying src/krb5/_ccache.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_match.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_ccache_support_switch.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_cccol.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_context.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_context_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_set_in_ccache.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_creds_opt_set_pac_request.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_exceptions.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_keyblock.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_have_content.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_kt_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_principal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_principal_heimdal.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_string.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/_string_mit.pyi -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/py.typed -> build/lib.linux-x86_64-cpython-39/krb5
+      copying src/krb5/python_krb5.h -> build/lib.linux-x86_64-cpython-39/krb5
+      running build_ext
+      building 'krb5._ccache' extension
+      creating build/temp.linux-x86_64-cpython-39
+      creating build/temp.linux-x86_64-cpython-39/src
+      creating build/temp.linux-x86_64-cpython-39/src/krb5
+      gcc -pthread -B /home/carlos/anaconda3/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /home/carlos/anaconda3/include -I/home/carlos/anaconda3/include -fPIC -O2 -isystem /home/carlos/anaconda3/include -fPIC -Isrc/krb5 -I/home/carlos/.msvscode.hdinsight/hdinsightJupyter/include -I/home/carlos/anaconda3/include/python3.9 -c src/krb5/_ccache.c -o build/temp.linux-x86_64-cpython-39/src/krb5/_ccache.o -I/home/carlos/anaconda3/include
+      In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:7,
+                       from /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:34,
+                       from /home/carlos/anaconda3/include/python3.9/Python.h:11,
+                       from src/krb5/_ccache.c:52:
+      /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:203:15: fatal error: limits.h: No existe el archivo o el directorio
+        203 | #include_next <limits.h>                /* recurse down to the real one */
+            |               ^~~~~~~~~~
+      compilation terminated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[2023-2-7:20:57:6] [Error]   ERROR: Failed building wheel for krb5
+
+[2023-2-7:20:57:6] [Info] Failed to build gssapi krb5
+
+[2023-2-7:20:57:6] [Error] ERROR: Could not build wheels for gssapi, krb5, which is required to install pyproject.toml-based projects
+
+.[2023-2-7:20:57:6] [Info] Install Jupyter error:
+[2023-2-7:20:57:6] [Error] Exit with non zero 1
+.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................

@@ -1,0 +1,6 @@
+LSP Notebooks experiment is disabled -- Jupyter disabled or not installed
+LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
+Python interpreter path: /bin/python3
+> conda info --json
+> conda config --get auto_activate_base
+Starting Pylance language server.

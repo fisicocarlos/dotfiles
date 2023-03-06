@@ -1,0 +1,12 @@
+[2023-2-7:20:42:59] [Info] Exec python, with args: --version
+[2023-2-7:20:42:59] [Info] Python 3.10.6
+
+[2023-2-7:20:42:59] [Info] Exec pip, with args: --version
+[2023-2-7:20:43:0] [Info] pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+
+[2023-2-7:20:43:0] [Info] Exec virtualenv, with args: --version
+[2023-2-7:20:43:0] [Error] Error: spawn virtualenv ENOENT
+[2023-2-7:20:43:0] [Info] Exec python, with args: -m,virtualenv,--version
+[2023-2-7:20:43:0] [Error] /usr/bin/python: No module named virtualenv
+
+[2023-2-7:20:43:0] [Error] Exit with non zero 1
