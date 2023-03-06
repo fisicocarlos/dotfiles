@@ -61,3 +61,4 @@ scpi () {
   scp $1 ${RASPI}:$2
 }
 alias r="ranger"
+. "$HOME/.cargo/env"
