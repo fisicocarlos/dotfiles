@@ -61,6 +61,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # File Explorer
     ([mod], "e", lazy.spawn("nautilus")),
 
+    # VSCode
+    ([mod], "p", lazy.spawn("code")),
+
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
 
