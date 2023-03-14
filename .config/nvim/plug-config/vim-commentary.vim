@@ -1,2 +1,2 @@
-nnoremap <space>/ :Commentary<CR>
-vnoremap <space>/ :Commentary<CR>
+nnoremap <space>- :Commentary<CR>
+vnoremap <space>- :Commentary<CR>

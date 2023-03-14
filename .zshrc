@@ -33,7 +33,8 @@ alias la='ls -A'
 alias l='ls -F'
 alias r='ranger .'
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias cat='bat --plain'
+alias cat='bat --plain --paging=never'
+alias mkt='cd $(mktemp -d)'
 
 # History
 HISTSIZE=100000
@@ -62,3 +63,4 @@ scpi () {
 }
 alias r="ranger"
 . "$HOME/.cargo/env"
+
