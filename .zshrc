@@ -64,3 +64,5 @@ scpi () {
 alias r="ranger"
 . "$HOME/.cargo/env"
 
+
+[ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
