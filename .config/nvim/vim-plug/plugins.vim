@@ -13,9 +13,11 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'jiangmiao/auto-pairs'
         " File explorer
         Plug 'scrooloose/NERDTree'    
+        " Nerdtree with git icons
+        Plug 'Xuyuanp/nerdtree-git-plugin'
         " Icons
         Plug 'ryanoasis/vim-devicons'
-        " Intellisense
+        "Intellisense
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Airline
         Plug 'vim-airline/vim-airline'
