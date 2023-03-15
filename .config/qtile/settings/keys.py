@@ -9,6 +9,7 @@ from libqtile.command import lazy
 
 
 mod = "mod4"
+alt = "mod1"
 
 keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Window Configs ------------
@@ -33,6 +34,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Toggle between different layouts as defined below
     ([mod], "Tab", lazy.next_layout()),
     ([mod, "shift"], "Tab", lazy.prev_layout()),
+
+    # windows style alt-tab/alt-shift-tab
+    ([alt], "Tab", lazy.layout.next()),
+    ([alt, "shift"], "Tab", lazy.layout.previous()),
 
     # Kill window
     ([mod], "w", lazy.window.kill()),
