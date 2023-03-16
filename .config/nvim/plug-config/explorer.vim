@@ -1,1 +1,1 @@
-nmap <Leader>e :CocCommand explorer<CR>
+"nmap <Leader>e :CocCommand explorer<CR>
