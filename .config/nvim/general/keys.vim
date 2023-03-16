@@ -9,7 +9,7 @@ nnoremap <M-l> :vertical resize +2<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
-" Alternate way to quit and save
+" Alternate way to quit
 nnoremap <C-q> :q<CR>
 
 " Close current buffer

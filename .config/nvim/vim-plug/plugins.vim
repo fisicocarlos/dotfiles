@@ -40,7 +40,10 @@ call plug#begin('~/.config/nvim/plugged')
         "Fugitive git
         "tpope /
         Plug 'tpope/vim-fugitive'
-
+        " Git Single tabpage interface for easily cycling through diffs 
+        Plug 'nvim-lua/plenary.nvim'
+        Plug 'sindrets/diffview.nvim'
+        Plug 'nvim-tree/nvim-web-devicons'
 
         " Themes
         Plug 'joshdick/onedark.vim'

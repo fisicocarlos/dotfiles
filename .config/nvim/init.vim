@@ -14,6 +14,7 @@ source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/prettier.vim
+source $HOME/.config/nvim/plug-config/diffview.vim
 "luafile $HOME/.config/nvim/plug-config/nvim-treeseter.lua
 " Themes
 source $HOME/.config/nvim/general/colors.vim
