@@ -37,6 +37,10 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'airblade/vim-rooter'
         " Prettier
         Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+        "Fugitive git
+        "tpope /
+        Plug 'tpope/vim-fugitive'
+
 
         " Themes
         Plug 'joshdick/onedark.vim'
