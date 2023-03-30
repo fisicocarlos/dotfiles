@@ -47,6 +47,9 @@ fi
 if [ ! -f "$HISTFILE" ]; then
     touch "$HISTFILE"
 fi
+#Editor default
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 #ctrl-space for autocomplete
 bindkey '^ ' autosuggest-accept
