@@ -1,0 +1,185 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.detectIndentation": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+      100,
+      79
+    ],
+    "editor.tabSize": 4
+  },
+  "[scala]": {
+    "editor.rulers": [
+      120
+    ],
+    "editor.tabSize": 2
+  },
+  "autoDocstring.docstringFormat": "google",
+  "autoDocstring.guessTypes": true,
+  "breadcrumbs.enabled": false,
+  "editor.folding": true,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 14,
+  "editor.glyphMargin": true,
+  "editor.guides.indentation": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.insertSpaces": true,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [
+    80
+  ],
+  "editor.scrollbar.vertical": "auto",
+  "editor.tabSize": 4,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.watcherExclude": {
+    "**/.ammonite": true,
+    "**/.bloop": true,
+    "**/.metals": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "indenticator.color.dark": "rgba(255,255,255,0.1)",
+  "indenticator.width": 1,
+  "java.configuration.maven.globalSettings": "C:/Users/crs93731/Desktop/settings_maven.xml",
+  "java.configuration.maven.userSettings": "C:/Users/crs93731/Desktop/settings_maven.xml",
+  "java.maven.downloadSources": true,
+  "maven.excludedFolders": [
+    "**/.*",
+    "**/node_modules",
+    "**/target",
+    "**/bin",
+    "**/archetype-resources"
+  ],
+  "maven.executable.path": "C:/Program Files (x86)/IntelliJ IDEA-2021.1.2/plugins/maven/lib/maven3/bin/mvn",
+  "maven.executable.preferMavenWrapper": false,
+  "maven.terminal.useJavaHome": true,
+  "projectManager.git.baseFolders": [
+    "C:/Users/crs93731/Desktop"
+  ],
+  "projectManager.openInCurrentWindowIfEmpty": "always",
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+  "projectManager.sortList": "Recent",
+  "projectManager.tags": [
+    "DOF",
+    "JNL"
+  ],
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "settings.cycle": [
+    {
+      "id": "customLineNumbers",
+      "overrideWorkspaceSettings": false,
+      "values": [
+        {
+          "editor.lineNumbers": "relative",
+        },
+        {
+          "editor.lineNumbers": "on",
+        }
+      ]
+    }
+  ],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "Source Code Pro",
+  "vim.autoindent": true,
+  "vim.cursorStylePerMode.visual": "line",
+  "vim.cursorStylePerMode.visualblock": "line",
+  "vim.cursorStylePerMode.visualline": "line",
+  "vim.disableExtension": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "j"
+      ]
+    }
+  ],
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.normalModeKeyBindings": [
+    {
+      "after": [
+        "i"
+      ],
+      "before": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.overrideCopy": false,
+  "vim.startInInsertMode": true,
+  "vim.useCtrlKeys": false,
+  "vim.useSystemClipboard": true,
+  "vsicons.associations.files": [
+    {
+      "extensions": [
+        "properties"
+      ],
+      "format": "svg",
+      "icon": "config"
+    }
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "custom",
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#333333",
+    "statusBar.background": "#333333",
+    "statusBar.foreground": "#ffffff9f",
+  },
+  "workbench.editor.showTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.openMode": "doubleClick",
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "none",
+  "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "explorer.copyRelativePathSeparator": "/",
+  "git-graph.commitDetailsView.fileView.type": "File List",
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "workbench.sideBar.location": "right",
+  "remote.SSH.remotePlatform": {
+    "raspi.local": "linux"
+  },
+  "Notes.notesLocation": "c:\\Users\\crs93731\\Desktop\\poc\\.notes",
+  "git.openRepositoryInParentFolders": "always",
+  "window.openFoldersInNewWindow": "on",
+  "metals.serverVersion": "0.11.12+204-c9635e1a-SNAPSHOT",
+  "workbench.editor.untitled.hint": "hidden"
+}
