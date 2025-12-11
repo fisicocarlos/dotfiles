@@ -73,12 +73,9 @@ fi
  
 # https://github.com/sharkdp/bat
 if [ -x /usr/bin/batcat ]; then
-    alias cat="batcat --paging=never"
-    export BAT_PAGER="less -R"
-    export PAGER="less"
-    export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
-    export MANROFFOPT="-c"
-    alias less="batcat --paging=always"
+    alias cat='batcat --paging=never'
+    alias less='batcat --paging=always'
+    PAGER=less
 fi
 
 alias r='ranger'
@@ -92,7 +89,7 @@ bindkey '^ ' autosuggest-accept
 # https://www.atlassian.com/git/tutorials/dotfiles
 # Wrapper function para dotfiles
 # Wrapper function para dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.cfg.git/ -C $HOME --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 compdef config=git
 
 
