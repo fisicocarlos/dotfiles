@@ -47,7 +47,6 @@ fi
 # Editor default
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export PAGER="batcat"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -59,7 +58,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
 
 #ls | lsd commands
 alias ll='ls -alF'
@@ -76,6 +74,10 @@ fi
 # https://github.com/sharkdp/bat
 if [ -x /usr/bin/batcat ]; then
     alias cat="batcat --paging=never"
+    export BAT_PAGER="less -R"
+    export PAGER="less"
+    export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+    export MANROFFOPT="-c"
     alias less="batcat --paging=always"
 fi
 
@@ -88,7 +90,11 @@ bindkey '^ ' autosuggest-accept
 
 # git dotfiles bare repo 
 # https://www.atlassian.com/git/tutorials/dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
+# Wrapper function para dotfiles
+# Wrapper function para dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg.git/ -C $HOME --work-tree=$HOME'
+compdef config=git
+
 
 # >>> Added by Spyder >>>
 alias spyder=/home/carlos/.local/spyder-6/envs/spyder-runtime/bin/spyder
