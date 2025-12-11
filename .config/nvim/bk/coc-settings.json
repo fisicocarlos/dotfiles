@@ -1,0 +1,16 @@
+{
+  "coc.preferences.formatOnSave": false,
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+  "languageserver": {
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    }
+  },
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.source": "vim-devicons",
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "snippets.ultisnips.pythonPrompt": false
+}
