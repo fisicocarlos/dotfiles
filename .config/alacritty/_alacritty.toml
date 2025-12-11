@@ -1,0 +1,113 @@
+tabspace = 4
+
+[window.dimensions]
+columns = 90
+lines = 25
+
+[window.padding]
+x = 2
+y = 2
+
+[font]
+size = 10
+
+  [font.normal]
+  family = "SauceCodePro Nerd Font Mono"
+  style = "Regular"
+
+  [font.bold]
+  family = "SauceCodePro Nerd Font Mono"
+  style = "Bold"
+
+  [font.italic]
+  family = "SauceCodePro Nerd Font Mono"
+  style = "Italic"
+
+  [font.offset]
+  x = 0
+  y = 0
+
+[schemes.codelight.primary]
+background = "#ffffff"
+foreground = "#1e1e1e"
+
+[schemes.codelight.cursor]
+text = "#d4d4d4"
+cursor = "#d4d4d4"
+
+[schemes.codelight.normal]
+black = "#1e1e1e"
+red = "#c72e0f"
+green = "#009000"
+yellow = "#795e25"
+blue = "#007acc"
+magenta = "#af00db"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
+[schemes.codelight.bright]
+black = "#1e1e1e"
+red = "#c72e0f"
+green = "#009000"
+yellow = "#795e25"
+blue = "#007acc"
+magenta = "#af00db"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
+[schemes.codedark.primary]
+background = "#1e1e1e"
+foreground = "#d4d4d4"
+
+[schemes.codedark.cursor]
+text = "#d4d4d4"
+cursor = "#d4d4d4"
+
+[schemes.codedark.normal]
+black = "#1e1e1e"
+red = "#f44747"
+green = "#608b4e"
+yellow = "#dcdcaa"
+blue = "#569cd6"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
+[schemes.codedark.bright]
+black = "#1e1e1e"
+red = "#f44747"
+green = "#608b4e"
+yellow = "#dcdcaa"
+blue = "#569cd6"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#d4d4d4"
+
+[colors.cursor]
+text = "#d4d4d4"
+cursor = "#d4d4d4"
+
+[colors.normal]
+black = "#1e1e1e"
+red = "#f44747"
+green = "#608b4e"
+yellow = "#dcdcaa"
+blue = "#569cd6"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
+[colors.bright]
+black = "#1e1e1e"
+red = "#f44747"
+green = "#608b4e"
+yellow = "#dcdcaa"
+blue = "#569cd6"
+magenta = "#c678dd"
+cyan = "#56b6c2"
+white = "#d4d4d4"
+
