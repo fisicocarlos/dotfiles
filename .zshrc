@@ -70,12 +70,17 @@ if [ -x /usr/bin/lsd ]; then
     alias lla='lsd -la'
     alias lt='lsd --tree'
 fi
- 
+
+# https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo#22043
+alias sudo='sudo '
+
 # https://github.com/sharkdp/bat
 if [ -x /usr/bin/batcat ]; then
     alias cat='batcat --paging=never'
     alias less='batcat --paging=always'
-    PAGER=less
+    export PAGER=less
+    export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+    export MANROFFOPT="-c"
 fi
 
 alias r='ranger'
