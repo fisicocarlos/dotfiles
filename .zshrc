@@ -1,4 +1,3 @@
-
 # The following lines were added by compinstall
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -8,7 +7,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-################################################
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
@@ -99,7 +97,7 @@ alias sudo='sudo '
 # https://github.com/sharkdp/bat
 if [ -x /usr/bin/bat ]; then
     alias cat='bat --paging=never'
-    alias less='bat --paging=always'
+    alias less='bat --paging=always --style=full'
     export PAGER=less
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
     export MANROFFOPT="-c"
