@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/carlos/.config/old-autostart-scripts/load_ssh.sh
+Icon=application-x-executable-script
+Name=load_ssh.sh
+Type=Application
+X-KDE-AutostartScript=true
