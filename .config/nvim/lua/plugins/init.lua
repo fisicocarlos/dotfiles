@@ -296,6 +296,11 @@ local builtin_plugins = {
             nvim_tree_darker = true,
         })
     end,
+},
+{
+  'mrcjkb/rustaceanvim',
+  version = '^6', -- Recommended
+  lazy = false, -- This plugin is already lazy
 }
 }
 
