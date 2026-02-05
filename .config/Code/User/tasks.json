@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "format",
+            "type": "process",
+            "command": "${command:editor.action.formatDocument} || editorHasDocumentFormattingProvider"
+        },
+        {
+            "label": "organizeImports",
+            "type": "process",
+            "command": "${command:editor.action.organizeImports} || supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/",
+        },
+        {
+            "label": "formatAndOrganize",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "format",
+                "organizeImports"
+            ]
+        }
+    ]
+}
